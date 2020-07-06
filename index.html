@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Javascript Calculator</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <script>
@@ -72,21 +73,20 @@
 </head>
 <body>
 	<h1 class="bg-dark h-50 text-light" style="text-align: center; padding:10px 0;">Javascript Calculator</h1>
-	<div class="bg-success" style="width: 50%; height: 300px; margin:80px auto;">
-		<div class="form-group" style="display: flex; width: 70%; padding-top: 50px; padding-left: 200px; ">
-			<input type="text" name="firstNumber" id="firstNumber" class="form-control">
-			<input type="text" name="lastNumber" id="lastNumber" class="form-control" style="margin-left: 10px;">
-		</div>
-		<div class="button" style="padding: 10px; padding-left: 150px;">
+	<div id="div1" class="bg-success" style="width: 80%; height: 300px; margin:5% auto;">
+		<center><div id="frm" class="form-group" style="display: flex; padding-top: 5%; margin:0 3%;">
+			<input style="width: 70%;" type="text" name="firstNumber" id="firstNumber" class="form-control">
+			<input style="width: 70%; margin-left: 10px" type="text" name="lastNumber" id="lastNumber" class="form-control">
+		</div></center>
+		<center><div class="button" style="padding: 5% 0;">
 			<button class="btn btn-primary" style=""  onclick="sumation()">Sum</button>
 			<button class="btn btn-dark" style="margin-left: 20px" onclick="minus()">Minus</button>
 			<button class="btn btn-warning" style="margin-left: 20px"  onclick="multiply()">Multiply</button>
 			<button class="btn btn-info" style="margin-left: 20px" onclick="divide()">Divide</button>
-		</div>
-		<div class="bg-white" style="width: 50%; margin:auto; border-radius: 3px;">
+		</div></center>
+		<center><div class="bg-white" style="width: 50%; margin:auto; border-radius: 3px;">
 	       <p id="output" style="padding:10px 10px;  " >Your result in here</p>
-		</div>
-	
+		</div></center>
 	</div>
 	<footer class="bg-dark text-light" style="padding:10px 0; text-align: center;">
 		<h4>Developer:</h4>
